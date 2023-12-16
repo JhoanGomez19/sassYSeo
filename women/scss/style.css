@@ -1,0 +1,184 @@
+header {
+  display: grid;
+}
+header .img-nav {
+  display: flex;
+  padding-left: 40px;
+}
+header .img-nav img {
+  width: 255px;
+  height: 250px;
+}
+header .title-first {
+  display: flex;
+  color: white;
+  font-family: "Kenia", sans-serif;
+  font-size: 2rem;
+  margin-left: 40px;
+}
+header .nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: #161614;
+  font-family: "Abel", sans-serif;
+  overflow: hidden;
+}
+header .nav-container .nav-ul-li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+header .nav-container .nav-ul-li li {
+  padding-top: 15px;
+  padding-left: 10px;
+  list-style: none;
+}
+header .nav-container .nav-ul-li li a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+main .container-main-section-fisher .container-main-div-fisher {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  place-items: center;
+}
+main .container-main-section-fisher .container-main-div-fisher img {
+  width: 280px;
+  height: 250px;
+  margin-top: 40px;
+}
+main .container-main-section-fisher p {
+  font-family: "Abel", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #161614;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+footer h3 {
+  color: white;
+  font-size: 1.8rem;
+  padding-left: 60px;
+  font-family: "Abel", sans-serif;
+}
+footer .container-icon {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  gap: 10px;
+  padding-right: 50px;
+}
+
+@media (max-width: 1810px) {
+  main .container-main-section-fisher .container-main-div-fisher {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+@media (max-width: 1398px) {
+  main .container-main-section-fisher .container-main-div-fisher {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+@media (max-width: 1041px) {
+  main .container-main-section-fisher .container-main-div-fisher {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+@media (max-width: 660px) {
+  header .nav-container .nav-ul-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  header .nav-container .nav-ul-li li {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  header .nav-container .img-nav {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 0;
+  }
+  header .nav-container .title-first {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  header .nav-container .title-first h1 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  main .container-main-section-fisher .container-main-div-fisher {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    place-items: center;
+  }
+}
+@media (max-width: 458px) {
+  header .img-nav {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  header .nav-container .nav-ul-li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  header .nav-container .nav-ul-li li {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  header .nav-container .title-first h1 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  main {
+    padding: 0;
+  }
+  main .container-main-section-fisher .container-main-div-fisher {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

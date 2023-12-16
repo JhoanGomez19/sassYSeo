@@ -56,7 +56,8 @@
 
         .img-nav {
             display: flex;
-            justify-content: center;
+            justify-self: center;
+            align-self: center;
             padding: 0;
         }
         .title-first {
@@ -71,21 +72,17 @@
         }
     }
 }
-
-
-main {
+    main {
         .container-main-section-fisher {
             .container-main-div-fisher {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
                 gap: 10px;
+                place-items: center;
             }
         } 
     }
 }
-
-
-
 
 
 @media (max-width: 458px) {

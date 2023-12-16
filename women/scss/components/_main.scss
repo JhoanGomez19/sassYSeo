@@ -1,0 +1,22 @@
+main {
+    .container-main-section-fisher {
+        .container-main-div-fisher {
+           
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            place-items:center;
+            img{
+                width: 280px;
+                height: 250px;
+                margin-top: 40px;
+            }
+        }
+        p {
+            font-family: 'Abel', sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+   
+}

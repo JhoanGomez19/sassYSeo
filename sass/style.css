@@ -1,6 +1,21 @@
 header {
   display: grid;
 }
+header .img-nav {
+  display: flex;
+  padding-left: 40px;
+}
+header .img-nav img {
+  width: 255px;
+  height: 250px;
+}
+header .title-first {
+  display: flex;
+  color: white;
+  font-family: "Kenia", sans-serif;
+  font-size: 2rem;
+  margin-left: 40px;
+}
 header .nav-container {
   width: 100%;
   display: flex;
@@ -8,13 +23,13 @@ header .nav-container {
   padding: 0;
   background-color: #161614;
   font-family: "Abel", sans-serif;
+  overflow: hidden;
 }
 header .nav-container .nav-ul-li {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 100%;
-  padding-right: 15px;
+  margin-right: 25px;
 }
 header .nav-container .nav-ul-li li {
   padding-top: 15px;
@@ -25,28 +40,15 @@ header .nav-container .nav-ul-li li a {
   text-decoration: none;
   color: white;
 }
-header .img-nav {
-  display: flex;
-  width: 100%;
-  padding-left: 40px;
-}
-header .img-nav img {
-  width: 255px;
-  height: 250px;
-}
-header .title-first {
-  display: flex;
-  width: 100%;
-  color: white;
-  padding-left: 45px;
-  padding-bottom: 10px;
-  font-family: "Kenia", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 16px;
-  margin: 0;
-  padding: 0;
 }
 
 main .container-main-section-fisher .container-main-div-fisher {
@@ -61,6 +63,7 @@ main .container-main-section-fisher .container-main-div-fisher img {
 main .container-main-section-fisher p {
   font-family: "Abel", sans-serif;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 footer {
@@ -71,9 +74,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 40px;
 }
 footer h3 {
   color: white;
+  font-size: 1.8rem;
   padding-left: 60px;
   font-family: "Abel", sans-serif;
 }
@@ -81,6 +86,7 @@ footer .container-icon {
   display: flex;
   flex-direction: column;
   font-size: 30px;
+  gap: 10px;
   padding-right: 50px;
 }
 
@@ -103,6 +109,7 @@ footer .container-icon {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    place-items: center;
   }
 }
 @media (max-width: 660px) {
@@ -119,7 +126,8 @@ footer .container-icon {
   }
   header .nav-container .img-nav {
     display: flex;
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
     padding: 0;
   }
   header .nav-container .title-first {
@@ -136,6 +144,7 @@ footer .container-icon {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+    place-items: center;
   }
 }
 @media (max-width: 458px) {

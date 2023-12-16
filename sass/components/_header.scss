@@ -1,6 +1,25 @@
+
 header {
     display: grid;
     
+
+    .img-nav {
+        display: flex;
+        padding-left: 40px;
+
+        img{
+            width: 255px;
+            height: 250px;
+           
+        }
+    }
+    .title-first {
+        display: flex;
+        color: white;
+        font-family: 'Kenia', sans-serif;
+        font-size: 2.0rem;
+        margin-left: 40px;
+    }
     .nav-container {
         width: 100%;
         display: flex;
@@ -8,13 +27,14 @@ header {
         padding: 0;
         background-color: #161614 ;
         font-family: 'Abel', sans-serif;
+        overflow: hidden;
 
         .nav-ul-li  {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            width: 100%;
-            padding-right: 15px;
+            margin-right: 25px;
+
 
             li {
                 padding-top: 15px;
@@ -29,25 +49,7 @@ header {
             
         }
     }
-    .img-nav {
-        display: flex;
-        width: 100%;
-        padding-left: 40px;
-
-        img{
-            width: 255px;
-            height: 250px;
-           
-        }
-    }
-    .title-first {
-        display: flex;
-        width: 100%;
-        color: white;
-        padding-left: 45px;
-        padding-bottom: 10px;
-        font-family: 'Kenia', sans-serif;
-    }
+   
     
 
 }
