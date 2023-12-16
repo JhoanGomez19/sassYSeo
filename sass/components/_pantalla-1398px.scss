@@ -1,0 +1,9 @@
+
+@media (max-width: 1398px) {
+    main .container-main-section-fisher .container-main-div-fisher {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+    }
+}
