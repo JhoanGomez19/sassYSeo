@@ -1,0 +1,45 @@
+header {
+    display: grid;
+    .nav-container {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         padding: 0;
+         background-color: #161614 ;
+         font-family: 'Abel', sans-serif;
+        .nav-ul-li  {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          width: 100%;
+          padding-right: 15px;
+        li {
+            padding-top: 15px;
+            padding-left: 10px;
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: white;
+         }
+      }
+    }
+  }
+  .img-nav {
+     display: flex;
+     width: 100%;
+     padding-left: 40px;  
+     img{
+        width: 255px;
+        height: 250px;
+       
+    }
+  }
+  .title-first {
+    display: flex;
+    width: 100%;
+    color: white;
+    padding-left: 45px;
+    padding-bottom: 10px;
+    font-family: 'Kenia', sans-serif;
+}
+}

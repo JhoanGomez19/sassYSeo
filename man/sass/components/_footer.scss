@@ -1,0 +1,19 @@
+footer {
+    background-color: #161614;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        color: white;
+        padding-left: 50px;
+        font-family: 'Abel', sans-serif;
+    }
+    .container-icon {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        padding-right: 50px;
+    }
+}
