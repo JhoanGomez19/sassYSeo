@@ -1,10 +1,11 @@
+// Estilos para el reseteo de márgenes y rellenos en todos los elementos y ajuste del modelo de caja
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
 }
 
+// Establecer el tamaño de fuente base para el documento HTML
 html {
     font-size: 16px;
 }

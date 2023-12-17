@@ -1,10 +1,11 @@
+// Estilos globales para el reseteo de márgenes y el modelo de caja
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
 }
 
+// Configuración del tamaño de fuente base para el documento HTML
 html {
     font-size: 16px;
 }

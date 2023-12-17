@@ -1,4 +1,6 @@
+// Estilos responsivos usando media queries
 
+// Para pantallas con un ancho máximo de 1810px
 @media (max-width: 1810px) {
     main {
         .container-main-section-fisher {
@@ -11,8 +13,7 @@
     }
 }
 
-
-
+// Para pantallas con un ancho máximo de 1398px
 @media (max-width: 1398px) {
     main {
         .container-main-section-fisher {
@@ -20,12 +21,12 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
-        
             }
         }
     } 
 }
 
+// Para pantallas con un ancho máximo de 1041px
 @media (max-width: 1041px) {
     main {
         .container-main-section-fisher {
@@ -37,6 +38,8 @@
         }   
     }
 }
+
+// Para pantallas con un ancho máximo de 660px
 @media (max-width: 660px) {
     header {
         .nav-container {
@@ -50,8 +53,8 @@
                     justify-content: center;
                     font-size: 1.0rem;
                 }
-
-        } 
+            } 
+        }
 
         .img-nav {
             display: flex;
@@ -70,7 +73,7 @@
             }
         }
     }
-}
+
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
@@ -83,13 +86,8 @@
     }
 }
 
-
-
-
+// Para pantallas con un ancho máximo de 458px
 @media (max-width: 458px) {
-    
-    
-    
     header {
         .img-nav {
             display: flex;
@@ -115,12 +113,8 @@
                     padding: 0;
                 }
             } 
-
         } 
     } 
-
-    
-    
 
     main {
         padding: 0;
@@ -135,4 +129,4 @@
             }
         } 
     }
-} 
+}

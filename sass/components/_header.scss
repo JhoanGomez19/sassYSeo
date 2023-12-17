@@ -1,18 +1,21 @@
-
+// Estilos para el encabezado (header)
 header {
+    // Configuración de la disposición en cuadrícula
     display: grid;
-    
 
+    // Logo de navegación
     .img-nav {
         display: flex;
         padding-left: 40px;
 
-        img{
+        // Estilos para la imagen del logo
+        img {
             width: 255px;
             height: 250px;
-           
         }
     }
+
+    // Título principal
     .title-first {
         display: flex;
         color: white;
@@ -20,36 +23,36 @@ header {
         font-size: 2.0rem;
         margin-left: 40px;
     }
+
+    // Contenedor de navegación
     .nav-container {
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 0;
-        background-color: #161614 ;
+        background-color: #161614;
         font-family: 'Abel', sans-serif;
         overflow: hidden;
 
-        .nav-ul-li  {
+        // Lista de navegación
+        .nav-ul-li {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             margin-right: 25px;
 
-
+            // Elemento de lista
             li {
                 padding-top: 15px;
                 padding-left: 10px;
                 list-style: none;
 
+                // Estilos para los enlaces
                 a {
                     text-decoration: none;
                     color: white;
                 }
             }
-            
         }
     }
-   
-    
-
 }

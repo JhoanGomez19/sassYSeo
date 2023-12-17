@@ -1,7 +1,11 @@
+// Estilos para el contenido principal (main) en diferentes tamaños de pantalla
 
+// Tamaño de pantalla: mayor a 1810px
 @media (max-width: 1810px) {
     main {
+        // Contenedor principal de la sección "fisher"
         .container-main-section-fisher {
+            // Contenedor interno dentro de la sección "fisher"
             .container-main-div-fisher {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -11,24 +15,27 @@
     }
 }
 
-
-
+// Tamaño de pantalla: 1398px - 1810px
 @media (max-width: 1398px) {
     main {
+        // Contenedor principal de la sección "fisher"
         .container-main-section-fisher {
+            // Contenedor interno dentro de la sección "fisher"
             .container-main-div-fisher {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
-        
             }
         }
     } 
 }
 
+// Tamaño de pantalla: 1041px - 1397px
 @media (max-width: 1041px) {
     main {
+        // Contenedor principal de la sección "fisher"
         .container-main-section-fisher {
+            // Contenedor interno dentro de la sección "fisher"
             .container-main-div-fisher {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -37,42 +44,51 @@
         }   
     }
 }
+
+// Tamaño de pantalla: 660px - 1040px
 @media (max-width: 660px) {
     header {
+        // Contenedor de navegación
         .nav-container {
-            .nav-ul-li{
+            // Lista de navegación
+            .nav-ul-li {
                 display: flex;
                 flex-direction: column;
-                justify-content:flex-end;
+                justify-content: flex-end;
                 padding: 0;
                 li {
                     display: flex;
                     justify-content: center;
                     font-size: 1.0rem;
                 }
+            } 
 
-        } 
-
-        .img-nav {
-            display: flex;
-            justify-self: center;
-            align-self: center;
-            padding: 0;
-        }
-        .title-first {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            h1 {
+            // Logo de navegación
+            .img-nav {
+                display: flex;
+                justify-self: center;
+                align-self: center;
+                padding: 0;
+            }
+            
+            // Título principal
+            .title-first {
                 display: flex;
                 justify-content: center;
                 padding: 0;
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                }
             }
         }
     }
-}
+
     main {
+        // Contenedor principal de la sección "fisher"
         .container-main-section-fisher {
+            // Contenedor interno dentro de la sección "fisher"
             .container-main-div-fisher {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
@@ -83,25 +99,23 @@
     }
 }
 
-
-
-
-
+// Tamaño de pantalla: 459px - 659px
 @media (max-width: 458px) {
-    
-    
-    
     header {
+        // Logo de navegación
         .img-nav {
             display: flex;
             justify-content: center;
             padding: 0;
         }
+        
+        // Contenedor de navegación
         .nav-container {
-            .nav-ul-li{
+            // Lista de navegación
+            .nav-ul-li {
                 display: flex;
                 flex-direction: column;
-                justify-content:flex-end;
+                justify-content: flex-end;
                 padding: 0;
                 li {
                     display: flex;
@@ -109,6 +123,8 @@
                     font-size: 0.8rem;
                 }
             }
+            
+            // Título principal
             .title-first {
                 h1 {
                     display: flex;
@@ -116,16 +132,14 @@
                     padding: 0;
                 }
             } 
-
         } 
     } 
 
-    
-    
-
     main {
         padding: 0;
+        // Contenedor principal de la sección "fisher"
         .container-main-section-fisher {
+            // Contenedor interno dentro de la sección "fisher"
             .container-main-div-fisher {
                 display: flex;
                 flex-direction: column;
@@ -136,4 +150,5 @@
             }
         } 
     }
-} 
+}
+    

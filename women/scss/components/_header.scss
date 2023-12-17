@@ -1,55 +1,80 @@
+// Estilos para el encabezado
 header {
-  display: grid;
+    // Diseño de cuadrícula
+    display: grid;
   
-
-  .img-nav {
+    // Estilos para la imagen de navegación
+    .img-nav {
+      // Diseño flexible en fila
       display: flex;
+      // Relleno a la izquierda
       padding-left: 40px;
-
-      img{
-          width: 255px;
-          height: 250px;
-         
+  
+      // Estilos para la imagen dentro de .img-nav
+      img {
+        // Ancho de la imagen
+        width: 255px;
+        // Altura de la imagen
+        height: 250px;
       }
-  }
-  .title-first {
+    }
+  
+    // Estilos para el primer título
+    .title-first {
+      // Diseño flexible en fila
       display: flex;
+      // Color del texto blanco
       color: white;
+      // Tipo de fuente 'Kenia'
       font-family: 'Kenia', sans-serif;
+      // Tamaño de fuente
       font-size: 2.0rem;
+      // Margen a la izquierda
       margin-left: 40px;
-  }
-  .nav-container {
+    }
+  
+    // Estilos para el contenedor de navegación
+    .nav-container {
+      // Ancho completo
       width: 100%;
+      // Diseño flexible en columna
       display: flex;
       flex-direction: column;
+      // Relleno cero
       padding: 0;
-      background-color: #161614 ;
+      // Color de fondo
+      background-color: #161614;
+      // Tipo de fuente 'Abel'
       font-family: 'Abel', sans-serif;
+      // Ocultar desbordamiento
       overflow: hidden;
-
-      .nav-ul-li  {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-
-          margin-right: 25px;
-
-
-          li {
-              padding-top: 15px;
-              padding-left: 10px;
-              list-style: none;
-
-              a {
-                  text-decoration: none;
-                  color: white;
-              }
-          }
-          
-      }
-  }
- 
   
-
-}
+      // Estilos para la lista de navegación y elementos de lista
+      .nav-ul-li {
+        // Diseño flexible en fila
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        // Margen a la derecha
+        margin-right: 25px;
+  
+        // Estilos para los elementos de lista y enlaces dentro de la lista
+        li {
+          // Relleno superior
+          padding-top: 15px;
+          // Relleno a la izquierda
+          padding-left: 10px;
+          // Sin viñetas en la lista
+          list-style: none;
+  
+          a {
+            // Sin decoración de texto
+            text-decoration: none;
+            // Color del texto blanco
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  

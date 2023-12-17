@@ -1,0 +1,141 @@
+/* Estilo para el contenedor principal */
+main {
+    display: grid;
+
+    /* Estilo para la sección dentro del contenedor principal */
+    section {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+
+        /* Estilo para el párrafo dentro de la sección */
+        p {
+            margin-top: 5px;
+            font-size: 2.0rem;
+            padding-right: 2px;
+            text-align: center;
+        }
+    }
+
+    /* Estilo para la sección con clase image-flex-p */
+    .image-flex-p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 600px;
+        background-color: #f9f9f9;
+
+        /* Estilo para el contenedor de texto dentro de la sección image-flex-p */
+        .container-text-flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            /* Estilo para el primer texto dentro del contenedor de texto */
+            .first-text-flex {
+                font-size: 2rem;
+                margin: 0;
+                color: #4285F4;
+                text-align: center;
+            }
+
+            /* Estilo para el segundo texto dentro del contenedor de texto */
+            .second-text-flex {
+                font-size: 1.3rem;
+                color: #979797;
+                text-align: center;
+            }
+        }
+
+        /* Estilo para la imagen dentro de la sección image-flex-p */
+        img {
+            display: flex;
+            width: 650px;
+            height: 500px;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    /* Estilo para la sección con clase image-code-p */
+    .image-code-p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 600px;
+
+        /* Estilo para el contenedor de texto dentro de la sección image-code-p */
+        .container-text-code {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            /* Estilo para el primer texto dentro del contenedor de texto */
+            .first-text-code {
+                font-size: 2rem;
+                margin: 0;
+                color: #4285F4;
+                text-align: center;
+            }
+
+            /* Estilo para el segundo texto dentro del contenedor de texto */
+            .second-text-code {
+                font-size: 1.3rem;
+                color: #979797;
+                text-align: center;
+            }
+        }
+
+        /* Estilo para la imagen dentro de la sección image-code-p */
+        img {
+            display: flex;
+            width: 650px;
+            height: 500px;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    /* Estilo para la sección con clase image-google-p */
+    .image-google-p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 600px;
+        background-color: #f9f9f9;
+
+        /* Estilo para el contenedor de texto dentro de la sección image-google-p */
+        .container-text-google {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            /* Estilo para el primer texto dentro del contenedor de texto */
+            .first-text-google {
+                font-size: 2rem;
+                margin: 0;
+                color: #4285F4;
+                text-align: center;
+            }
+
+            /* Estilo para el segundo texto dentro del contenedor de texto */
+            .second-text-google {
+                font-size: 1.3rem;
+                color: #979797;
+                text-align: center;
+            }
+        }
+
+        /* Estilo para la imagen dentro de la sección image-google-p */
+        img {
+            display: flex;
+            width: 700px;
+            height: 400px;
+            justify-self: center;
+            align-self: center;
+        }
+    }
+}

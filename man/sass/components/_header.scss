@@ -1,55 +1,66 @@
+// Estilos para el encabezado (header)
 header {
-  display: grid;
-  
+    // Configuración de la disposición de cuadrícula
+    display: grid;
 
-  .img-nav {
-      display: flex;
-      padding-left: 40px;
+    // Estilos para la imagen de navegación
+    .img-nav {
+        // Configuración para mostrar como flexbox y agregar relleno izquierdo
+        display: flex;
+        padding-left: 40px;
 
-      img{
-          width: 255px;
-          height: 250px;
-         
-      }
-  }
-  .title-first {
-      display: flex;
-      color: white;
-      font-family: 'Kenia', sans-serif;
-      font-size: 2.0rem;
-      margin-left: 40px;
-  }
-  .nav-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      background-color: #161614 ;
-      font-family: 'Abel', sans-serif;
-      overflow: hidden;
+        // Estilos para la imagen dentro de .img-nav
+        img {
+            width: 255px;
+            height: 250px;
+        }
+    }
 
-      .nav-ul-li  {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
+    // Estilos para el primer título
+    .title-first {
+        // Configuración para mostrar como flexbox
+        display: flex;
+        color: white;
+        font-family: 'Kenia', sans-serif;
+        font-size: 2.0rem;
+        margin-left: 40px;
+    }
 
-          margin-right: 25px;
+    // Contenedor de navegación
+    .nav-container {
+        width: 100%;
+        // Configuración para mostrar como columna flexbox y eliminar relleno
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-color: #161614;
+        font-family: 'Abel', sans-serif;
+        overflow: hidden;
 
+        // Lista de navegación
+        .nav-ul-li {
+            // Configuración para mostrar como fila flexbox y justificar al final
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
 
-          li {
-              padding-top: 15px;
-              padding-left: 10px;
-              list-style: none;
+            // Margen derecho para la lista de navegación
+            margin-right: 25px;
 
-              a {
-                  text-decoration: none;
-                  color: white;
-              }
-          }
-          
-      }
-  }
- 
-  
+            // Estilos para cada elemento de la lista
+            li {
+                // Añadir espacio en la parte superior y relleno a la izquierda
+                padding-top: 15px;
+                padding-left: 10px;
+                list-style: none;
 
+                // Estilos para los enlaces
+                a {
+                    // Eliminar decoración de subrayado y establecer color de texto
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
 }

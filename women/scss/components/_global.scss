@@ -1,10 +1,16 @@
+// Estilos de reinicio para todos los elementos
 * {
+    // Margen cero
     margin: 0;
+    // Relleno cero
     padding: 0;
+    // Caja de modelado: borde-box
     box-sizing: border-box;
- 
-}
-
-html {
+  }
+  
+  // Estilos para el elemento HTML
+  html {
+    // Tamaño de fuente base de 16 píxeles
     font-size: 16px;
-}
+  }
+  

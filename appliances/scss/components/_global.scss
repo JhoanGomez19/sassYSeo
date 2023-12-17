@@ -1,10 +1,11 @@
+// Estilos generales para restablecer márgenes y rellenos y utilizar la caja de modelado de borde
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
 }
 
+// Estilos específicos para el elemento html
 html {
     font-size: 16px;
 }

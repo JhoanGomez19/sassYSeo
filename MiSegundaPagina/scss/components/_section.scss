@@ -1,0 +1,21 @@
+
+// Estilos para la sección
+section {
+    // Altura de la sección
+    height: 500px;
+    // Estilos para el diseño flexible en columna
+    display: flex;
+    flex-direction: column;
+
+    // Estilos para los párrafos dentro de la sección
+    p {
+        // Margen superior
+        margin-top: 5px;
+        // Tamaño de fuente
+        font-size: 2.0rem;
+        // Relleno a la derecha
+        padding-right: 2px;
+        // Alineación del texto al centro
+        text-align: center;
+    }
+}

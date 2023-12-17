@@ -1,22 +1,29 @@
+// Estilos para la sección principal (main)
 main {
+    // Contenedor para la sección principal relacionada con "fisher"
     .container-main-section-fisher {
+        // Contenedor principal dentro de la sección "fisher"
         .container-main-div-fisher {
-           
+            // Configuración del diseño de cuadrícula
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             gap: 10px;
-            place-items:center;
-            img{
+            // Alineación del contenido y los elementos en el centro de la cuadrícula
+            place-items: center;
+
+            // Estilos para las imágenes dentro del contenedor
+            img {
                 width: 280px;
                 height: 250px;
                 margin-top: 40px;
             }
         }
+
+        // Estilos para los párrafos dentro de la sección "fisher"
         p {
             font-family: 'Abel', sans-serif;
             font-size: 1.2rem;
             text-align: center;
         }
     }
-   
 }

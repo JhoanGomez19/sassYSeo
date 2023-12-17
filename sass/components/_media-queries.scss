@@ -1,16 +1,19 @@
- @media screen and (max-width: 1810px) {
-        main {
-            .container-main-section-fisher {
-                .container-main-div-fisher {
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    gap: 10px;
-                }
-            } 
-        }
+// Estilos para diferentes tamaños de pantalla utilizando media queries
+
+// Pantallas con ancho máximo de 1810px
+@media screen and (max-width: 1810px) {
+    main {
+        .container-main-section-fisher {
+            .container-main-div-fisher {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+        } 
+    }
 }
 
-
+// Pantallas con ancho máximo de 1398px
 @media (max-width: 1398px) {
     main {
         .container-main-section-fisher {
@@ -18,12 +21,12 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
-        
             }
         } 
     }
 }
 
+// Pantallas con ancho máximo de 1041px
 @media (max-width: 1041px) {
     main {
         .container-main-section-fisher {
@@ -32,28 +35,27 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 10px;
                 place-items: center;
-        
             }
         } 
     }
 }
 
-
+// Pantallas con ancho máximo de 660px
 @media (max-width: 660px) {
     header {
         .nav-container {
-            .nav-ul-li{
+            .nav-ul-li {
                 display: flex;
                 flex-direction: column;
-                justify-content:flex-end;
+                justify-content: flex-end;
                 padding: 0;
                 li {
                     display: flex;
                     justify-content: center;
                     font-size: 1.0rem;
                 }
-
-        } 
+            } 
+        }
 
         .img-nav {
             display: flex;
@@ -61,6 +63,7 @@
             align-self: center;
             padding: 0;
         }
+
         .title-first {
             display: flex;
             justify-content: center;
@@ -72,7 +75,7 @@
             }
         }
     }
-}
+
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
@@ -85,16 +88,14 @@
     }
 }
 
-
-
-
+// Pantallas con ancho máximo de 458px
 @media (max-width: 458px) {
     header {
         .nav-container {
-            .nav-ul-li{
+            .nav-ul-li {
                 display: flex;
                 flex-direction: column;
-                justify-content:flex-end;
+                justify-content: flex-end;
                 padding: 0;
                 li {
                     display: flex;
@@ -103,11 +104,13 @@
                 }
             }
         } 
+
         .img-nav {
             display: flex;
             justify-content: center;
             padding: 0;
         }
+
         .title-first {
             display: flex;
             justify-content: center;
@@ -117,7 +120,6 @@
                 justify-content: center;
                 padding: 0;
             }
-    
         }
     } 
 
@@ -129,7 +131,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 0 ;
+                padding: 0;
                 width: 100%;
             }
         } 

@@ -1,4 +1,6 @@
+// Estilos para los diferentes tamaños de pantalla utilizando media queries
 
+// Pantalla de 1810px o menos
 @media (max-width: 1810px) {
     main {
         .container-main-section-fisher {
@@ -11,8 +13,7 @@
     }
 }
 
-
-
+// Pantalla de 1398px o menos
 @media (max-width: 1398px) {
     main {
         .container-main-section-fisher {
@@ -20,12 +21,12 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 gap: 10px;
-        
             }
         }
     } 
 }
 
+// Pantalla de 1041px o menos
 @media (max-width: 1041px) {
     main {
         .container-main-section-fisher {
@@ -37,6 +38,8 @@
         }   
     }
 }
+
+// Pantalla de 660px o menos
 @media (max-width: 660px) {
     header {
         .nav-container {
@@ -50,27 +53,28 @@
                     justify-content: center;
                     font-size: 1.0rem;
                 }
+            }
 
-        } 
+            .img-nav {
+                display: flex;
+                justify-self: center;
+                align-self: center;
+                padding: 0;
+            }
 
-        .img-nav {
-            display: flex;
-            justify-self: center;
-            align-self: center;
-            padding: 0;
-        }
-        .title-first {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            h1 {
+            .title-first {
                 display: flex;
                 justify-content: center;
                 padding: 0;
+                h1 {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                }
             }
         }
     }
-}
+
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
@@ -83,19 +87,15 @@
     }
 }
 
-
-
-
+// Pantalla de 458px o menos
 @media (max-width: 458px) {
-    
-    
-    
     header {
         .img-nav {
             display: flex;
             justify-content: center;
             padding: 0;
         }
+
         .nav-container {
             .nav-ul-li{
                 display: flex;
@@ -108,6 +108,7 @@
                     font-size: 0.8rem;
                 }
             }
+
             .title-first {
                 h1 {
                     display: flex;
@@ -115,12 +116,8 @@
                     padding: 0;
                 }
             } 
-
         } 
     } 
-
-    
-    
 
     main {
         padding: 0;
@@ -130,9 +127,9 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 0 ;
+                padding: 0;
                 width: 100%;
             }
         } 
     }
-} 
+}

@@ -1,23 +1,42 @@
+// Estilos para el pie de página (footer)
 footer {
+    // Fondo del pie de página
     background-color: #161614;
+    // Configuración del contenedor flex, con dirección de fila
     display: flex;
     flex-direction: row;
+    // Altura del pie de página
     height: 150px;
+    // Distribución del espacio entre los elementos y centrado vertical
     justify-content: space-between;
     align-items: center;
+    // Ancho del pie de página al 100% del contenedor padre
     width: 100%;
+    // Margen superior para separar el pie de página del contenido superior
     margin-top: 40px;
+
+    // Estilos para el título (h3) del pie de página
     h3 {
+        // Color del texto blanco
         color: white;
+        // Tamaño de fuente 1.8 rem
         font-size: 1.8rem;
+        // Espaciado a la izquierda de 60 píxeles
         padding-left: 60px;
+        // Familia de fuentes 'Abel', sans-serif
         font-family: 'Abel', sans-serif;
     }
+
+    // Estilos para el contenedor de iconos en el pie de página
     .container-icon {
+        // Configuración del contenedor flex con dirección de columna
         display: flex;
         flex-direction: column;
+        // Tamaño de fuente para los íconos de 30 píxeles
         font-size: 30px;
+        // Espaciado entre los íconos de 10 píxeles
         gap: 10px;
+        // Espaciado a la derecha de 50 píxeles
         padding-right: 50px;
     }
 }
