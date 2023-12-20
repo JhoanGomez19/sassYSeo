@@ -5,6 +5,8 @@
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
+
+                // @include grid(grid, grid-template-columns)
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 10px;
