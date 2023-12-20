@@ -1,0 +1,54 @@
+// Estilos para la barra de navegación
+.nav-container {
+    // Estilos para la lista no ordenada dentro de la barra de navegación
+    .nav-ul-li {
+        // Estilos para los elementos de la lista
+        li {
+            // Estilos para los enlaces dentro de los elementos de la lista
+            a {
+                // Transición suave del color durante 0.3 segundos
+                transition: color 0.3s;
+                
+                // Cambia el color al pasar el ratón por encima
+                &:hover {
+                    color: rgb(85, 83, 83);
+                }
+            }
+        }
+    }
+}
+
+// Estilos para el contenedor principal de la sección Fisher
+.container-main-div-fisher {
+    // Estilos para las imágenes dentro del contenedor
+    img {
+        // Ancho y alto de las imágenes
+        width: 200px;
+        height: 100px;
+    
+        // Transición suave de la transformación durante 0.3 segundos con efecto ease
+        transition: transform 0.3s ease;
+    
+        // Agrandar la imagen al pasar el ratón por encima
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+// Estilos para el contenedor de iconos
+.container-icon {
+    // Estilos para los enlaces dentro del contenedor de iconos
+    a {
+        // Estilos para los iconos dentro de los enlaces
+        i {
+            // Transición suave del color durante 0.3 segundos
+            transition: color 0.3s;
+
+            // Cambia el color del icono al pasar el ratón por encima
+            &:hover {
+                color: rgb(85, 83, 83);
+            }
+        }
+    }
+}

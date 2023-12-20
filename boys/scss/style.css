@@ -91,6 +91,9 @@ footer .container-icon {
   gap: 10px;
   padding-right: 50px;
 }
+footer .container-icon a i {
+  color: white;
+}
 
 @media (max-width: 1810px) {
   main .container-main-section-fisher .container-main-div-fisher {
@@ -181,4 +184,26 @@ footer .container-icon {
     padding: 0;
     width: 100%;
   }
+}
+.nav-container .nav-ul-li li a {
+  transition: color 0.3s;
+}
+.nav-container .nav-ul-li li a:hover {
+  color: rgb(85, 83, 83);
+}
+
+.container-main-div-fisher img {
+  width: 200px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+.container-main-div-fisher img:hover {
+  transform: scale(1.2);
+}
+
+.container-icon a i {
+  transition: color 0.3s;
+}
+.container-icon a i:hover {
+  color: rgb(85, 83, 83);
 }/*# sourceMappingURL=style.css.map */

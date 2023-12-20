@@ -1,0 +1,36 @@
+// Estilos para la clase .nav-ul-li
+.nav-ul-li {
+    // Estilos para la clase .nav-link dentro de .nav-ul-li
+    .nav-link {
+        // Estilos para la etiqueta <li> dentro de .nav-link
+        li {
+            // Estilos para la etiqueta <a> dentro de <li>
+            a {
+                // Transición para el color con duración de 0.3 segundos
+                transition: color 0.3s;
+                
+                // Estilos cuando se pasa el mouse sobre el enlace
+                &:hover {
+                    color: aqua;
+                }
+            }    
+        }
+    }
+}
+
+// Estilos para la clase .container-img-icon-p
+.container-img-icon-p {
+    // Estilos para la clase .container-icon dentro de .container-img-icon-p
+    .container-icon {
+        // Estilos para la etiqueta <a> dentro de .container-icon
+        a {
+            // Transición para el color con duración de 0.3 segundos
+            transition: color 0.3s;
+            
+            // Estilos cuando se pasa el mouse sobre el enlace
+            &:hover {
+                color: aqua;
+            }
+        }
+    }
+}

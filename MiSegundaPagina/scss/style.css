@@ -246,8 +246,10 @@ footer .container-icon {
   justify-self: flex-end;
   align-self: center;
   gap: 30px;
-  color: white;
   padding-right: 50px;
+}
+footer .container-icon a {
+  color: white;
 }
 footer .img-logo {
   display: flex;
@@ -529,4 +531,17 @@ footer .img-logo {
     grid-area: container-icon;
     font-size: 1.3rem;
   }
+}
+.nav-ul-li .nav-link li a {
+  transition: color 0.3s;
+}
+.nav-ul-li .nav-link li a:hover {
+  color: aqua;
+}
+
+.container-img-icon-p .container-icon a {
+  transition: color 0.3s;
+}
+.container-img-icon-p .container-icon a:hover {
+  color: aqua;
 }/*# sourceMappingURL=style.css.map */

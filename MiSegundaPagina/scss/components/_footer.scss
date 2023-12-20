@@ -41,8 +41,11 @@ footer {
       justify-self: flex-end;
       align-self: center;
       gap: 30px;
-      color: white;
+   
       padding-right: 50px;
+         a {
+            color: white;
+        }
   }
 
   /* Estilos para la imagen del logo personal en el pie de página */
