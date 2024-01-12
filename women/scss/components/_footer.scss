@@ -1,35 +1,30 @@
+
 // Estilos para el pie de página (footer)
 footer {
-    // Configuración del color de fondo y diseño flex
-    background-color: #161614;
-    display: flex;
-    flex-direction: row;
-    height: 150px;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 40px;
-  
-    // Estilos para el encabezado dentro del pie de página
-    h3 {
+  @include generalFJA (flex, row, space-between, center);
+  background-color: #161614;
+  height: 150px;
+  width: 100%;
+  margin-top: 40px;
+
+  // Estilos para el encabezado h3 dentro del pie de página
+  h3 {
       color: white;
       font-size: 1.8rem;
       padding-left: 60px;
       font-family: 'Abel', sans-serif;
-    }
-  
-    // Estilos para el contenedor de iconos dentro del pie de página
-    .container-icon {
-      display: flex;
-      flex-direction: column;
+  }
+
+  // Estilos para el contenedor de iconos dentro del pie de página
+  .container-icon {
+      @include generalDF (flex, column);
       font-size: 30px;
       gap: 10px;
       padding-right: 50px;
-        a {
-            i {
+      a {
+          i {
               color: white;
-            }
-        }
-    }
+          }
+      }
   }
-  
+}

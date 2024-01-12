@@ -1,80 +1,54 @@
-// Estilos para el encabezado
+// Estilos para el encabezado (header)
 header {
-    // Diseño de cuadrícula
-    display: grid;
-  
-    // Estilos para la imagen de navegación
-    .img-nav {
-      // Diseño flexible en fila
+  // Configuración de la disposición en cuadrícula
+  display: grid;
+
+  // Logo de navegación
+  .img-nav {
       display: flex;
-      // Relleno a la izquierda
       padding-left: 40px;
-  
-      // Estilos para la imagen dentro de .img-nav
+
+      // Estilos para la imagen del logo
       img {
-        // Ancho de la imagen
-        width: 255px;
-        // Altura de la imagen
-        height: 250px;
+          width: 255px;
+          height: 250px;
       }
-    }
-  
-    // Estilos para el primer título
-    .title-first {
-      // Diseño flexible en fila
-      display: flex;
-      // Color del texto blanco
-      color: white;
-      // Tipo de fuente 'Kenia'
-      font-family: 'Kenia', sans-serif;
-      // Tamaño de fuente
-      font-size: 2.0rem;
-      // Margen a la izquierda
-      margin-left: 40px;
-    }
-  
-    // Estilos para el contenedor de navegación
-    .nav-container {
-      // Ancho completo
-      width: 100%;
-      // Diseño flexible en columna
-      display: flex;
-      flex-direction: column;
-      // Relleno cero
-      padding: 0;
-      // Color de fondo
-      background-color: #161614;
-      // Tipo de fuente 'Abel'
-      font-family: 'Abel', sans-serif;
-      // Ocultar desbordamiento
-      overflow: hidden;
-  
-      // Estilos para la lista de navegación y elementos de lista
-      .nav-ul-li {
-        // Diseño flexible en fila
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        // Margen a la derecha
-        margin-right: 25px;
-  
-        // Estilos para los elementos de lista y enlaces dentro de la lista
-        li {
-          // Relleno superior
-          padding-top: 15px;
-          // Relleno a la izquierda
-          padding-left: 10px;
-          // Sin viñetas en la lista
-          list-style: none;
-  
-          a {
-            // Sin decoración de texto
-            text-decoration: none;
-            // Color del texto blanco
-            color: white;
-          }
-        }
-      }
-    }
   }
-  
+
+  // Título principal
+  .title-first {
+      display: flex;
+      color: white;
+      font-family: 'Kenia', sans-serif;
+      font-size: 2.0rem;
+      margin-left: 40px;
+  }
+
+  // Contenedor de navegación
+  .nav-container {
+      width: 100%;
+      @include generalDF (flex, column);
+      padding: 0;
+      background-color: #161614;
+      font-family: 'Abel', sans-serif;
+      overflow: hidden;
+
+      // Lista de navegación
+      .nav-ul-li {
+          @include generalDFJ (flex,row, flex-end);
+          margin-right: 25px;
+          // Elemento de lista
+          li {
+              padding-top: 15px;
+              padding-left: 10px;
+              list-style: none;
+
+              // Estilos para los enlaces
+              a {
+                  text-decoration: none;
+                  color: white;
+              }
+          }
+      }
+  }
+}

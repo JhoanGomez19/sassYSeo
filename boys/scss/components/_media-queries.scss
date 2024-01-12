@@ -1,74 +1,63 @@
-// Estilos responsivos usando media queries
+// Estilos para diferentes tamaños de pantalla utilizando media queries
 
-// Para pantallas con un ancho máximo de 1810px
-@media (max-width: 1810px) {
+// Pantallas con ancho máximo de 1810px
+@media screen and (max-width: 1810px) {
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 10px;
+
+                @include generalDGG (grid,repeat(4, 1fr), 10px)
             }
         } 
     }
 }
 
-// Para pantallas con un ancho máximo de 1398px
+// Pantallas con ancho máximo de 1398px
 @media (max-width: 1398px) {
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
+                @include generalDGG(grid,repeat(3, 1fr), 10px);
             }
-        }
-    } 
+        } 
+    }
 }
 
-// Para pantallas con un ancho máximo de 1041px
+// Pantallas con ancho máximo de 1041px
 @media (max-width: 1041px) {
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
+                @include generalDGGP (grid, repeat(2, 1fr), 10px, center );
             }
-        }   
+        } 
     }
 }
 
-// Para pantallas con un ancho máximo de 660px
+// Pantallas con ancho máximo de 660px
 @media (max-width: 660px) {
     header {
         .nav-container {
-            .nav-ul-li{
-                display: flex;
-                flex-direction: column;
-                justify-content:flex-end;
+            .nav-ul-li {
+                @include generalDFJ (flex, column, flex-end);
                 padding: 0;
                 li {
-                    display: flex;
-                    justify-content: center;
+                    @include generalDJ (flex, center);
                     font-size: 1.0rem;
                 }
             } 
         }
 
         .img-nav {
-            display: flex;
-            justify-self: center;
-            align-self: center;
+            @include generalDJA (flex, center,center);
             padding: 0;
         }
+
         .title-first {
-            display: flex;
-            justify-content: center;
+            @include generalDJ (flex, center);
             padding: 0;
             h1 {
-                display: flex;
-                justify-content: center;
+                @include generalDJ (flex, center);
                 padding: 0;
             }
         }
@@ -77,54 +66,47 @@
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 10px;
-                place-items: center;
+                @include generalDGGP (grid, repeat(1, 1fr), 10px, center);
             }
         } 
     }
 }
 
-// Para pantallas con un ancho máximo de 458px
+// Pantallas con ancho máximo de 458px
 @media (max-width: 458px) {
     header {
-        .img-nav {
-            display: flex;
-            justify-content: center;
-            padding: 0;
-        }
         .nav-container {
-            .nav-ul-li{
-                display: flex;
-                flex-direction: column;
-                justify-content:flex-end;
+            .nav-ul-li {
+                @include generalDFJ (flex, column, flex-end);
                 padding: 0;
                 li {
-                    display: flex;
-                    justify-content: center;
+                    @include generalDJ (flex, center);
                     font-size: 0.8rem;
                 }
             }
-            .title-first {
-                h1 {
-                    display: flex;
-                    justify-content: center;
-                    padding: 0;
-                }
-            } 
         } 
+
+        .img-nav {
+            @include generalDJ (flex, center);
+            padding: 0;
+        }
+
+        .title-first {
+            @include generalDJ (flex, center);
+            padding: 0;
+            h1 {
+                @include generalDJ (flex, center);
+                padding: 0;
+            }
+        }
     } 
 
     main {
         padding: 0;
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 0 ;
+                @include generalDFJA(flex, column, center, center);
+                padding: 0;
                 width: 100%;
             }
         } 

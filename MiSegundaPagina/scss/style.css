@@ -1,4 +1,10 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Estilos para el encabezado de la página */
 header {
   /* Utiliza el modelo de disposición de cuadrícula para organizar los elementos hijos */
@@ -10,9 +16,9 @@ header {
 header .nav-ul-li {
   /* Contenedor de la navegación con dimensiones y disposición específicas */
   display: grid;
-  height: 600px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  gap: 1fr 1fr;
+  height: 600px;
   background-color: #3987BA;
   padding: 0;
   /* Estilos para el logo personal */
@@ -26,11 +32,11 @@ header .nav-ul-li .image-logo {
   grid-area: 1/1/2/2;
 }
 header .nav-ul-li .nav-link {
-  grid-area: 2/3/1/3;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   gap: 50px;
+  grid-area: grid-area 2/3/1/3;
   margin-top: 20px;
   margin-right: 5%;
   font-size: 1.2rem;
@@ -52,20 +58,14 @@ header .image-my {
   margin-left: 5%;
 }
 header h1 {
-  grid-area: 2/2/3/2;
   display: flex;
-  height: 85%;
   justify-content: center;
   align-items: flex-end;
+  grid-area: grid-area 2/2/1/3;
+  height: 590px;
   font-size: 3rem;
   color: white;
   margin: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 section {
@@ -130,10 +130,10 @@ main .image-flex-p .container-text-flex .second-text-flex {
 }
 main .image-flex-p img {
   display: flex;
-  width: 650px;
-  height: 500px;
   justify-self: center;
   align-self: center;
+  width: 650px;
+  height: 500px;
 }
 main .image-code-p {
   display: grid;
@@ -164,10 +164,10 @@ main .image-code-p .container-text-code .second-text-code {
 }
 main .image-code-p img {
   display: flex;
-  width: 650px;
-  height: 500px;
   justify-self: center;
   align-self: center;
+  width: 650px;
+  height: 500px;
 }
 main .image-google-p {
   display: grid;
@@ -199,10 +199,10 @@ main .image-google-p .container-text-google .second-text-google {
 }
 main .image-google-p img {
   display: flex;
-  width: 700px;
-  height: 400px;
   justify-self: center;
   align-self: center;
+  width: 700px;
+  height: 400px;
 }
 
 /* Estilos para el pie de página */
@@ -226,10 +226,10 @@ footer .container-img-icon-p {
 }
 footer p {
   display: flex;
-  grid-area: 1/1/2/2;
-  font-size: 2.5rem;
   justify-content: center;
   align-items: center;
+  grid-area: grid-area 1/1/0/3;
+  font-size: 2.5rem;
   margin: 0;
   color: white;
 }
@@ -241,11 +241,11 @@ footer .img-team {
 footer .container-icon {
   display: flex;
   flex-direction: column;
-  font-size: 2.7rem;
-  grid-area: 1/2/2/3;
   justify-self: flex-end;
   align-self: center;
   gap: 30px;
+  grid-area: grid-area 0/2/2/3;
+  font-size: 2.7rem;
   padding-right: 50px;
 }
 footer .container-icon a {
@@ -253,11 +253,10 @@ footer .container-icon a {
 }
 footer .img-logo {
   display: flex;
-  grid-area: 2/2/3/3;
-  width: 260px;
-  height: 100px;
   justify-self: flex-end;
   align-self: flex-end;
+  width: 260px;
+  height: 100px;
   margin: 30px;
 }
 
@@ -282,7 +281,7 @@ footer .img-logo {
   }
   header h1 {
     font-size: 2.6rem;
-    height: 460.03px;
+    height: 590px;
   }
   section p {
     font-size: 1.8rem;
@@ -297,7 +296,7 @@ footer .img-logo {
   }
   header h1 {
     font-size: 2.3rem;
-    height: 460px;
+    height: 590px;
   }
   section p {
     font-size: 1.5rem;
@@ -336,9 +335,9 @@ footer .img-logo {
     height: 450px;
   }
   footer p {
-    font-size: 2rem;
     display: flex;
-    justify-self: flex-start;
+    justify-content: flex-start;
+    font-size: 2rem;
     padding-left: 50px;
   }
   footer .img-team {
@@ -351,7 +350,7 @@ footer .img-logo {
     height: 500px;
   }
   header h1 {
-    height: 365.03px;
+    height: 490px;
     font-size: 2rem;
   }
   section p {
@@ -376,7 +375,7 @@ footer .img-logo {
 }
 @media (max-width: 1086px) {
   header h1 {
-    height: 365.03px;
+    height: 490px;
     font-size: 2rem;
   }
   header .nav-link li {
@@ -398,7 +397,7 @@ footer .img-logo {
     gap: 8px;
   }
   header h1 {
-    height: 365.03px;
+    height: 490px;
     font-size: 1.8rem;
   }
   header .image-flex-p, header .image-code-p, header .image-google-p {
@@ -414,8 +413,8 @@ footer .img-logo {
 @media (max-width: 969px) {
   header .nav-ul-li {
     display: flex;
-    flex: 1;
     flex-direction: row;
+    flex: 1;
     align-items: flex-start;
     width: 100%;
   }
@@ -429,9 +428,9 @@ footer .img-logo {
     display: none;
   }
   header .nav-ul-li .image-logo {
-    height: auto;
-    order: 1;
     display: flex;
+    order: 1;
+    height: auto;
     width: 25%;
   }
   header .nav-ul-li .nav-link {
@@ -439,8 +438,8 @@ footer .img-logo {
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
-    width: 30%;
     order: 3;
+    width: 30%;
   }
   footer .img-team {
     width: 400px;
@@ -479,12 +478,12 @@ footer .img-logo {
     align-items: center;
   }
   header .nav-ul-li .nav-link {
-    order: 1;
     display: flex;
-    margin-top: 20px;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    order: 1;
+    margin-top: 20px;
     width: 100%;
   }
   header .nav-ul-li .nav-link li {
@@ -492,10 +491,10 @@ footer .img-logo {
     justify-content: center;
   }
   header .nav-ul-li .image-logo {
-    order: 2;
     display: flex;
-    justify-self: center;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    order: 2;
     margin-top: 50px;
     margin-left: 0;
     width: 250px;
@@ -509,23 +508,23 @@ footer .img-logo {
     display: none;
   }
   footer .container-img-icon-p {
-    margin: 0;
     display: grid;
-    grid-template-areas: "p container-icon" "img-team img-team";
-    grid-template-rows: auto auto;
     grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "p container-icon" "img-team img-team";
+    margin: 0;
   }
   footer p {
     grid-area: p;
     font-size: 1rem;
   }
   footer .img-team {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: img-team;
     width: 280px;
     height: 200px;
-    grid-area: img-team;
-    display: flex;
-    justify-self: center;
-    align-self: flex-end;
   }
   footer .container-icon {
     grid-area: container-icon;

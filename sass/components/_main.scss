@@ -5,10 +5,7 @@ main {
         // Contenedor principal dentro de la sección "fisher"
         .container-main-div-fisher {
             // Configuración del diseño de cuadrícula
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 10px;
-
+            @include generalDGG (grid, repeat(5,1fr), 10px);
             // Estilos para las imágenes dentro del contenedor
             img {
                 width: 320px;
@@ -20,7 +17,6 @@ main {
         p {
             font-family: 'Abel', sans-serif;
             font-size: 1.2rem;
-            text-align: center;
         }
     }
 }

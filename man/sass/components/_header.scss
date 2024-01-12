@@ -1,24 +1,22 @@
 // Estilos para el encabezado (header)
 header {
-    // Configuración de la disposición de cuadrícula
+    // Configuración de la disposición en cuadrícula
     display: grid;
 
-    // Estilos para la imagen de navegación
+    // Logo de navegación
     .img-nav {
-        // Configuración para mostrar como flexbox y agregar relleno izquierdo
         display: flex;
         padding-left: 40px;
 
-        // Estilos para la imagen dentro de .img-nav
+        // Estilos para la imagen del logo
         img {
             width: 255px;
             height: 250px;
         }
     }
 
-    // Estilos para el primer título
+    // Título principal
     .title-first {
-        // Configuración para mostrar como flexbox
         display: flex;
         color: white;
         font-family: 'Kenia', sans-serif;
@@ -29,9 +27,7 @@ header {
     // Contenedor de navegación
     .nav-container {
         width: 100%;
-        // Configuración para mostrar como columna flexbox y eliminar relleno
-        display: flex;
-        flex-direction: column;
+        @include generalDF (flex, column);
         padding: 0;
         background-color: #161614;
         font-family: 'Abel', sans-serif;
@@ -39,24 +35,16 @@ header {
 
         // Lista de navegación
         .nav-ul-li {
-            // Configuración para mostrar como fila flexbox y justificar al final
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-
-            // Margen derecho para la lista de navegación
+            @include generalDFJ (flex,row, flex-end);
             margin-right: 25px;
-
-            // Estilos para cada elemento de la lista
+            // Elemento de lista
             li {
-                // Añadir espacio en la parte superior y relleno a la izquierda
                 padding-top: 15px;
                 padding-left: 10px;
                 list-style: none;
 
                 // Estilos para los enlaces
                 a {
-                    // Eliminar decoración de subrayado y establecer color de texto
                     text-decoration: none;
                     color: white;
                 }

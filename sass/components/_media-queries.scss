@@ -6,10 +6,7 @@
         .container-main-section-fisher {
             .container-main-div-fisher {
 
-                // @include grid(grid, grid-template-columns)
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 10px;
+                @include generalDGG (grid,repeat(4, 1fr), 10px)
             }
         } 
     }
@@ -20,9 +17,7 @@
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
+                @include generalDGG(grid,repeat(3, 1fr), 10px);
             }
         } 
     }
@@ -33,10 +28,7 @@
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-                place-items: center;
+                @include generalDGGP (grid, repeat(2, 1fr), 10px, center );
             }
         } 
     }
@@ -47,32 +39,25 @@
     header {
         .nav-container {
             .nav-ul-li {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
+                @include generalDFJ (flex, column, flex-end);
                 padding: 0;
                 li {
-                    display: flex;
-                    justify-content: center;
+                    @include generalDJ (flex, center);
                     font-size: 1.0rem;
                 }
             } 
         }
 
         .img-nav {
-            display: flex;
-            justify-self: center;
-            align-self: center;
+            @include generalDJA (flex, center,center);
             padding: 0;
         }
 
         .title-first {
-            display: flex;
-            justify-content: center;
+            @include generalDJ (flex, center);
             padding: 0;
             h1 {
-                display: flex;
-                justify-content: center;
+                @include generalDJ (flex, center);
                 padding: 0;
             }
         }
@@ -81,10 +66,7 @@
     main {
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 10px;
-                place-items: center;
+                @include generalDGGP (grid, repeat(1, 1fr), 10px, center);
             }
         } 
     }
@@ -95,31 +77,25 @@
     header {
         .nav-container {
             .nav-ul-li {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
+                @include generalDFJ (flex, column, flex-end);
                 padding: 0;
                 li {
-                    display: flex;
-                    justify-content: center;
+                    @include generalDJ (flex, center);
                     font-size: 0.8rem;
                 }
             }
         } 
 
         .img-nav {
-            display: flex;
-            justify-content: center;
+            @include generalDJ (flex, center);
             padding: 0;
         }
 
         .title-first {
-            display: flex;
-            justify-content: center;
+            @include generalDJ (flex, center);
             padding: 0;
             h1 {
-                display: flex;
-                justify-content: center;
+                @include generalDJ (flex, center);
                 padding: 0;
             }
         }
@@ -129,10 +105,7 @@
         padding: 0;
         .container-main-section-fisher {
             .container-main-div-fisher {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include generalDFJA(flex, column, center, center);
                 padding: 0;
                 width: 100%;
             }

@@ -1,19 +1,21 @@
 // Estilos para el encabezado (header)
 header {
+    // Configuración de la disposición en cuadrícula
     display: grid;
 
-    // Estilos para la sección que contiene la imagen de navegación
+    // Logo de navegación
     .img-nav {
         display: flex;
         padding-left: 40px;
 
+        // Estilos para la imagen del logo
         img {
             width: 255px;
             height: 250px;
         }
     }
 
-    // Estilos para el título principal
+    // Título principal
     .title-first {
         display: flex;
         color: white;
@@ -22,30 +24,26 @@ header {
         margin-left: 40px;
     }
 
-    // Estilos para el contenedor de navegación
+    // Contenedor de navegación
     .nav-container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        @include generalDF (flex, column);
         padding: 0;
         background-color: #161614;
         font-family: 'Abel', sans-serif;
         overflow: hidden;
 
-        // Estilos para la lista de navegación
+        // Lista de navegación
         .nav-ul-li {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+            @include generalDFJ (flex,row, flex-end);
             margin-right: 25px;
-
-            // Estilos para cada elemento de la lista de navegación
+            // Elemento de lista
             li {
                 padding-top: 15px;
                 padding-left: 10px;
                 list-style: none;
 
-                // Estilos para los enlaces de navegación
+                // Estilos para los enlaces
                 a {
                     text-decoration: none;
                     color: white;

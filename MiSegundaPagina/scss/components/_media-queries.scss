@@ -25,7 +25,7 @@
         // Estilos para un encabezado específico
         h1 {
             font-size: 2.6rem;
-            height: 460.03px;
+            height: 590px;
         }
     }
     // Estilos para la sección
@@ -51,7 +51,7 @@
         // Estilos para un encabezado específico
         h1 {
             font-size: 2.3rem;
-            height: 460px;
+            height: 590px;
         }
     }
     // Estilos para la sección de contenido
@@ -108,9 +108,8 @@
         }
         // Estilos para un párrafo específico
         p {
+            @include generalDJ(flex, flex-start);
             font-size: 2.0rem;
-            display: flex;
-            justify-self: flex-start;
             padding-left: 50px;
         }
         // Estilos para una imagen específica
@@ -130,7 +129,7 @@
         }
         // Estilos para un encabezado específico
         h1 {
-            height: 365.03px;
+            height: 490px;
             font-size: 2.0rem;
         }
     }
@@ -167,7 +166,7 @@
     header {
         // Estilos para un encabezado específico
         h1 {
-            height: 365.03px;
+            height: 490px;
             font-size: 2.0rem;
         }
         // Estilos para los enlaces de navegación
@@ -201,15 +200,12 @@
             }
         }
         h1 {
-            height: 365.03px;
+            height: 490px;
             font-size: 1.8rem;
         }
         // Estilos para imágenes específicas
         .image-flex-p, .image-code-p, .image-google-p {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            gap: 10px;
+            @include generalDFJG (flex, column, space-around, 10px);     
         }
     }
     section p {
@@ -221,10 +217,7 @@
 @media (max-width: 969px) {
     header {
         .nav-ul-li {
-            display: flex;
-            flex: 1;
-            flex-direction: row;
-            align-items: flex-start;
+            @include generalDFFA (flex, row, 1, flex-start);
             width: 100%;
             h1 {
                 text-align: center;
@@ -237,18 +230,13 @@
                 display: none;
             }
             .image-logo {
+                @include generalDO(flex, 1);
                 height: auto;
-                order: 1;
-                display: flex;
                 width: 25%;
             }
             .nav-link {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                gap: 20px;
+                @include generalDFAGO(flex, column, flex-end, 20px, 3); 
                 width: 30%;
-                order: 3;
             }
         }
     }
@@ -265,9 +253,7 @@
     main {
         // Estilos para imágenes específicas dentro de un contenedor
         .image-flex-p, .image-code-p, .image-google-p {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
+            @include generalDFG(flex, column, 30px);
             img {
                 margin-top: 30px;
                 width: 300px;
@@ -298,30 +284,20 @@
 @media (max-width: 557px) {
     header {
         .nav-ul-li {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include generalDFJA(flex, column,center,center);
             // Estilos específicos para la lista de navegación
             .nav-link {
-                order: 1;
-                display: flex;
+                @include generalDFAGO(flex,column, center, 30px, 1);
+                // display: flex;
                 margin-top: 20px;
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
                 width: 100%;
                 li {
-                    display: flex;
-                    justify-content: center;
+                    @include generalDJ(flex, center);
                 }
             }
             // Estilos para el logo en la cabecera
             .image-logo {
-                order: 2;
-                display: flex;
-                justify-self: center;
-                align-self: center;
+                @include generalDJAO(flex, center, center, 2);
                 margin-top: 50px;
                 margin-left: 0;
                 width: 250px;
@@ -341,13 +317,10 @@
         }
         // Estilos para un contenedor específico
         .container-img-icon-p {
+            @include generalDGGGareas (grid, auto auto, auto auto,   
+            'p container-icon'
+            'img-team img-team' );
             margin: 0;
-            display: grid;
-            grid-template-areas:
-                'p container-icon'
-                'img-team img-team';
-            grid-template-rows: auto auto;
-            grid-template-columns: auto auto;
         }
         // Estilos para un párrafo específico
         p {
@@ -356,12 +329,9 @@
         }
         // Estilos para una imagen específica
         .img-team {
+            @include generalDJAG (flex, center, flex-end, img-team);
             width: 280px;
             height: 200px;
-            grid-area: img-team;
-            display: flex;
-            justify-self: center;
-            align-self: flex-end;
         }
         // Estilos para un contenedor específico
         .container-icon {

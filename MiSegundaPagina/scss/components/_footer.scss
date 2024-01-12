@@ -6,21 +6,15 @@ footer {
   /* Estilos para el contenedor principal del pie de página */
   .container-img-icon-p {
       /* Contenedor de imágenes, iconos y texto con disposición de cuadrícula */
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      gap: 10px;  
+      @include generalDGGG (grid, 1fr 1fr, 1fr 1fr, 10px); 
       height: 600px;
       background-color: #3987BA;
   }
 
   /* Estilos para el párrafo que contiene información de contacto */
   p {
-      display: flex;
-      grid-area: 1 / 1 / 2 / 2; 
+    @include generalDJAG(flex, center, center, grid-area 1 / 1 / 0 / 3);
       font-size: 2.5rem;
-      justify-content: center;
-      align-items: center;
       margin: 0;
       color: white;
   }
@@ -34,14 +28,8 @@ footer {
 
   /* Estilos para el contenedor de iconos de contacto */
   .container-icon {
-      display: flex;
-      flex-direction: column;
+     @include generalDFJAGself (flex, column, flex-end, center, 30px, grid-area 0 / 2 / 2 / 3);
       font-size: 2.7rem;
-      grid-area: 1 / 2 / 2 / 3;
-      justify-self: flex-end;
-      align-self: center;
-      gap: 30px;
-   
       padding-right: 50px;
          a {
             color: white;
@@ -50,12 +38,9 @@ footer {
 
   /* Estilos para la imagen del logo personal en el pie de página */
   .img-logo {
-      display: flex;
-      grid-area: 2 / 2 / 3 / 3; 
+      @include generalDJAself( flex, flex-end, flex-end);
       width: 260px;
       height: 100px;
-      justify-self: flex-end;
-      align-self: flex-end;
       margin: 30px;
   }
 }

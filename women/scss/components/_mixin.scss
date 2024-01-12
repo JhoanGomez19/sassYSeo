@@ -25,11 +25,6 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
-@mixin generalDFG ($display, $flex-direction, $gap) {
-    display: $display;
-    flex-direction: $flex-direction;
-    gap: $gap;
-}
 
 @mixin generalFJA ($display, $flex-direction, $justify-content, $align-items) {
     display: $display;

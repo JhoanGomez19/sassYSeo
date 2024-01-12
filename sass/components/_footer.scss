@@ -1,12 +1,9 @@
 
 // Estilos para el pie de página (footer)
 footer {
+    @include generalFJA (flex, row, space-between, center);
     background-color: #161614;
-    display: flex;
-    flex-direction: row;
     height: 150px;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     margin-top: 40px;
 
@@ -20,10 +17,8 @@ footer {
 
     // Estilos para el contenedor de iconos dentro del pie de página
     .container-icon {
-        display: flex;
-        flex-direction: column;
+        @include generalDFG (flex, column, 10px);
         font-size: 30px;
-        gap: 10px;
         padding-right: 50px;
         a {
             i {

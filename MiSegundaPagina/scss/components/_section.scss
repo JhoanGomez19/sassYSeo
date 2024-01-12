@@ -4,8 +4,7 @@ section {
     // Altura de la sección
     height: 500px;
     // Estilos para el diseño flexible en columna
-    display: flex;
-    flex-direction: column;
+    @include generalDF(flex, column);
 
     // Estilos para los párrafos dentro de la sección
     p {

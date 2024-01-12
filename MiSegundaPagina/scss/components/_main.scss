@@ -5,8 +5,7 @@ main {
     /* Estilo para la sección dentro del contenedor principal */
     section {
         height: 500px;
-        display: flex;
-        flex-direction: column;
+        @include generalDF (flex, column);
 
         /* Estilo para el párrafo dentro de la sección */
         p {
@@ -19,18 +18,13 @@ main {
 
     /* Estilo para la sección con clase image-flex-p */
     .image-flex-p {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include generalDG (grid, 1fr 1fr);
         height: 600px;
         background-color: #f9f9f9;
 
         /* Estilo para el contenedor de texto dentro de la sección image-flex-p */
-        .container-text-flex {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
+        .container-text-flex { 
+            @include generalDFJAG(flex, column, center, center, 20px);
 
             /* Estilo para el primer texto dentro del contenedor de texto */
             .first-text-flex {
@@ -50,27 +44,20 @@ main {
 
         /* Estilo para la imagen dentro de la sección image-flex-p */
         img {
-            display: flex;
+            @include generalDJAself(flex, center, center);
             width: 650px;
             height: 500px;
-            justify-self: center;
-            align-self: center;
         }
     }
 
     /* Estilo para la sección con clase image-code-p */
     .image-code-p {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include generalDG (grid, 1fr 1fr);
         height: 600px;
 
         /* Estilo para el contenedor de texto dentro de la sección image-code-p */
         .container-text-code {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
+            @include generalDFJAG (flex, column, center, center, 20px);
 
             /* Estilo para el primer texto dentro del contenedor de texto */
             .first-text-code {
@@ -90,28 +77,21 @@ main {
 
         /* Estilo para la imagen dentro de la sección image-code-p */
         img {
-            display: flex;
+            @include generalDJAself (flex, center,center);
             width: 650px;
             height: 500px;
-            justify-self: center;
-            align-self: center;
         }
     }
 
     /* Estilo para la sección con clase image-google-p */
     .image-google-p {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        @include generalDG(grid, 1fr 1fr);
         height: 600px;
         background-color: #f9f9f9;
 
         /* Estilo para el contenedor de texto dentro de la sección image-google-p */
         .container-text-google {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
+            @include generalDFJAG(flex, column, center, center, 20px);
 
             /* Estilo para el primer texto dentro del contenedor de texto */
             .first-text-google {
@@ -131,11 +111,9 @@ main {
 
         /* Estilo para la imagen dentro de la sección image-google-p */
         img {
-            display: flex;
+            @include generalDJAself(flex, center, center);
             width: 700px;
             height: 400px;
-            justify-self: center;
-            align-self: center;
         }
     }
 }

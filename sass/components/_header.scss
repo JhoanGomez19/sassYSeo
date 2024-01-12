@@ -27,8 +27,7 @@ header {
     // Contenedor de navegación
     .nav-container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        @include generalDF (flex, column);
         padding: 0;
         background-color: #161614;
         font-family: 'Abel', sans-serif;
@@ -36,11 +35,8 @@ header {
 
         // Lista de navegación
         .nav-ul-li {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+            @include generalDFJ (flex,row, flex-end);
             margin-right: 25px;
-
             // Elemento de lista
             li {
                 padding-top: 15px;
