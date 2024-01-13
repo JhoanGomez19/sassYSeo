@@ -226,7 +226,7 @@
         .image-flex-p, .image-code-p, .image-google-p {
             @include generalDFG(flex, column, 30px);
             img {
-                @include generalWHM (300px, 250px, 30px);
+                @include generalWHM (250px, 200px, 30px);
             }
         }
     }

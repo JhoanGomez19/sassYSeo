@@ -8,7 +8,7 @@ header {
       /* Contenedor de la navegación con dimensiones y disposición específicas */
       @include generalDGG (grid, 1fr 1fr 1fr, 1fr 1fr);
       @include generalHP(600px , 0);
-      background-color: #3987BA;
+      background-color: $color-azul-claro;
       
 
       /* Estilos para el logo personal */
@@ -27,7 +27,7 @@ header {
 
               /* Estilos para los enlaces dentro de la lista */
               a {
-                  color: white;
+                  color:$color-blanco;
                   text-decoration: none;
               }
           }
@@ -43,7 +43,7 @@ header {
   h1 {
     @include generalDJAG(flex, center, flex-end, grid-area 2 / 2 / 1 / 3);
     @include generalHFM(590px, 3.0rem, 0);
-    color: white;
+    color: $color-blanco;
   } 
 }
 

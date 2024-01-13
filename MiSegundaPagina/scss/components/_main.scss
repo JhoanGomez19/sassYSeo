@@ -17,7 +17,7 @@ main {
     .image-flex-p {
         @include generalDG (grid, 1fr 1fr);
         height: 600px;
-        background-color: #f9f9f9;
+        background-color: $color-blanco-opaco;
 
         /* Estilo para el contenedor de texto dentro de la sección image-flex-p */
         .container-text-flex { 
@@ -26,13 +26,13 @@ main {
             /* Estilo para el primer texto dentro del contenedor de texto */
             .first-text-flex {
                 @include generalMFT(0, 2rem, center);
-                color: #4285F4;
+                color: $color-azul-parrafo1;
             }
 
             /* Estilo para el segundo texto dentro del contenedor de texto */
             .second-text-flex {
                 @include generalFT (1.3rem, center);
-                color: #979797;
+                color: $color-azul-parrafo2;
             }
         }
 
@@ -55,13 +55,13 @@ main {
             /* Estilo para el primer texto dentro del contenedor de texto */
             .first-text-code {
                 @include generalMFT (0, 2rem, center);
-                color: #4285F4;
+                color: $color-azul-parrafo1;
             }
 
             /* Estilo para el segundo texto dentro del contenedor de texto */
             .second-text-code {
                 @include generalFT (1.3rem, center);
-                color: #979797;
+                color: $color-azul-parrafo2;
             }
         }
 
@@ -76,7 +76,7 @@ main {
     .image-google-p {
         @include generalDG(grid, 1fr 1fr);
         height: 600px;
-        background-color: #f9f9f9;
+        background-color: $color-blanco-opaco;
 
         /* Estilo para el contenedor de texto dentro de la sección image-google-p */
         .container-text-google {
@@ -85,13 +85,13 @@ main {
             /* Estilo para el primer texto dentro del contenedor de texto */
             .first-text-google {
                 @include generalMFT (0, 2rem, center);
-                color: #4285F4;
+                color: $color-azul-parrafo1;
             }
 
             /* Estilo para el segundo texto dentro del contenedor de texto */
             .second-text-google {
                 @include generalFT (1.3rem, center);
-                color: #979797;
+                color: $color-azul-parrafo2;
             }
         }
 

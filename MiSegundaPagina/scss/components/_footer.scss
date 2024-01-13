@@ -8,14 +8,14 @@ footer {
       /* Contenedor de imágenes, iconos y texto con disposición de cuadrícula */
       @include generalDGGG (grid, 1fr 1fr, 1fr 1fr, 10px); 
       height: 600px;
-      background-color: #3987BA;
+      background-color: $color-azul-claro ;
   }
 
   /* Estilos para el párrafo que contiene información de contacto */
   p {
     @include generalDJAG(flex, center, center, grid-area 1 / 1 / 0 / 3);
     @include generalMF(0, 2.5rem);
-      color: white;
+      color: $color-blanco;
   }
 
   /* Estilos para la imagen de relleno de contactos */
@@ -28,7 +28,7 @@ footer {
      @include generalDFJAGself (flex, column, flex-end, center, 30px, grid-area 0 / 2 / 2 / 3);
      @include generalFPright(2.7rem, 50px);
          a {
-            color: white;
+            color: $color-blanco;
         }
   }
 

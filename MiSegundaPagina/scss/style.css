@@ -20,7 +20,7 @@ header .nav-ul-li {
   gap: 1fr 1fr;
   height: 600px;
   padding: 0;
-  background-color: #3987BA;
+  background-color: #3987ba;
   /* Estilos para el logo personal */
   /* Estilos para la sección de enlaces de navegación */
 }
@@ -222,7 +222,7 @@ footer .container-img-icon-p {
   grid-template-rows: 1fr 1fr;
   gap: 10px;
   height: 600px;
-  background-color: #3987BA;
+  background-color: #3987ba;
 }
 footer p {
   display: flex;
@@ -453,8 +453,8 @@ footer .img-logo {
     gap: 30px;
   }
   main .image-flex-p img, main .image-code-p img, main .image-google-p img {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     margin: 30px;
   }
   footer .container-img-icon-p {
