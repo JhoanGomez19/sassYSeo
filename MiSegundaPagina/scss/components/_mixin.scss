@@ -150,6 +150,174 @@
 
 
 
+// parte de margenes y ancho y pequeñas partes de posicionamiento
+
+
+
+@mixin generalDP ($display, $padding-left){
+    display:$display;
+    padding-left: $padding-left;
+}
+@mixin generalGWH ($grid-area, $width, $height){
+    grid-area:  $grid-area;
+    width: $width;
+    height: $height;
+}
+
+@mixin generalWH ($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin generalGF ($grid-area,$font-size){
+    grid-area: $grid-area;
+    font-size: $font-size;
+}
+
+@mixin generalMG ($margin-right, $gap) {
+    margin-right: $margin-right;
+    gap: $gap;
+}
+
+@mixin generalDFM($display, $font-size, $margin-left){
+    display: $display;
+    font-size: $font-size;
+    margin-left: $margin-left;
+}
+
+@mixin generalWPO( $width, $padding, $overflow){
+    width: $width;
+    padding: $padding;
+    overflow: $overflow;
+    
+}
+@mixin generalOW($order,$width){
+    order: $order;
+    width: $width;
+}
+@mixin generalPW ($width,$padding){
+    width: $width;
+    padding: $padding;
+}
+
+@mixin generalMF ($margin, $font-size) {
+    margin: $margin;
+    font-size: $font-size;
+}
+
+@mixin generalFH ($font-size, $height){
+    font-size: $font-size;
+    height: $height;
+}
+
+@mixin generalFG ($font-size, $gap){
+    font-size: $font-size;
+    gap: $gap;
+}
+@mixin generalMW ($margin-top,$width){
+    margin-top: $margin-top;
+    width: $width;
+}
+
+@mixin generalPP ($padding-top, $padding-left){
+    padding-top: $padding-top;
+    padding-left: $padding-left;
+}
+
+@mixin generalWHM ($width,$height,$margin  ) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+}
+@mixin generalFPright($font-size, $padding-right){
+    font-size: $font-size;
+    padding-right: $padding-right;
+}
+@mixin generalFPleft($font-size, $padding-left){
+    font-size: $font-size;
+    padding-left: $padding-left;
+}
+
+@mixin generalHWM ($height,$width, $margin-top){
+    height: $height;
+    width: $width;
+    margin-top: $margin-top;
+}
+@mixin generalWHM ($width,$height, $margin){
+    width: $width;
+    height: $height;
+    margin: $margin;
+   
+}
+@mixin generalWHMtop ($width,$height, $margin-top){
+    width-top: $width-top;
+    height: $height;
+    margin: $margin;
+   
+}
+
+@mixin generalMPB($margin, $padding, $box-sizing) {
+    margin: $margin;
+    padding: $padding;
+    box-sizing: $box-sizing;
+}
+
+
+@mixin generalHP($height,$padding){
+    height: $height;
+    padding: $padding;
+}
+
+@mixin generalFT ($font-size,$text-align){
+    font-size: $font-size;
+    text-align: $text-align;
+}
+
+@mixin generalMMF($margin-top, $margin-left, $font-size){
+    margin-top: $margin-top;
+    margin-right: $margin-left;
+    font-size: $font-size;
+}
+@mixin generalHFM($height, $font-size, $margin ){
+    height:  $height;
+    font-size: $font-size;
+    margin: $margin;
+}
+
+@mixin generalMFT($margin ,$font-size,$text-align){
+    margin: $margin;
+    font-size: $font-size;
+    text-align: $text-align;
+} 
+@mixin generalMFPT($margin-top,$font-size,$padding-right,$text-align){
+    margin-top: $margin-top;
+    font-size: $font-size;
+    padding-right: $padding-right;
+    text-align: $text-align;
+} 
+@mixin generalTOHW ($text-align, $order, $height, $width){
+    text-align: $text-align;
+    order: $order;
+    height: $height;
+    width: $width;
+}
+
+@mixin generalWHMM ($width, $height, $margin-left, $margin-top) {
+    width: $width;
+    height: $height;
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+}
+
+@mixin generalWHMMG ($width, $height,  $margin-left, $margin-top, $grid-area  ){
+    width: $width;
+    height: $height;
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+    grid-area: $grid-area; 
+}
+
+
+
 
 
 

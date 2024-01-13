@@ -1,3 +1,5 @@
+//Parte de posicionamiento
+
 @mixin generalDF ($display, $flex-direction) {
     display: $display;
     flex-direction: $flex-direction;
@@ -25,6 +27,11 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+@mixin generalDFG ($display, $flex-direction, $gap) {
+    display: $display;
+    flex-direction: $flex-direction;
+    gap: $gap;
+}
 
 @mixin generalFJA ($display, $flex-direction, $justify-content, $align-items) {
     display: $display;
@@ -46,6 +53,74 @@
     justify-content: $justify-content;
     align-items: $align-items;
 } 
+
+
+
+// parte de margenes y ancho y pequeñas partes de posicionamiento
+
+
+
+@mixin generalDP ($display, $padding-left){
+    display:$display;
+    padding-left: $padding-left;
+}
+
+@mixin generalWH ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin generalDFM($display, $font-size, $margin-left){
+    display: $display;
+    font-size: $font-size;
+    margin-left: $margin-left;
+}
+
+@mixin generalWPO( $width, $padding, $overflow){
+    width: $width;
+    padding: $padding;
+    overflow: $overflow;
+    
+}
+
+@mixin generalPP ($padding-top, $padding-left){
+    padding-top: $padding-top;
+    padding-left: $padding-left;
+}
+@mixin generalPW ($width,$padding){
+    width: $width;
+    padding: $padding;
+}
+
+@mixin generalFPright($font-size, $padding-right){
+    font-size: $font-size;
+    padding-right: $padding-right;
+}
+@mixin generalFPleft($font-size, $padding-left){
+    font-size: $font-size;
+    padding-left: $padding-left;
+}
+
+@mixin generalWHM ($width, $height, $margin-top){
+    width: $width;
+    height: $height;
+    margin-top: $margin-top;
+}
+
+@mixin generalHWM ($height,$width, $margin-top){
+    height: $height;
+    width: $width;
+    margin-top: $margin-top;
+}
+
+@mixin generalMPB($margin,$padding,$box-sizing) {
+    margin: $margin;
+    padding: $padding;
+    box-sizing: $box-sizing;
+
+}
+
+
 
 
 

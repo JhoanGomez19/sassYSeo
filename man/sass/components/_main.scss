@@ -8,17 +8,14 @@ main {
             @include generalDGG (grid, repeat(5,1fr), 10px);
             // Estilos para las imágenes dentro del contenedor
             img {
-                width: 280px;
-                height: 250px;
-                margin-top: 30px;
+                @include generalWHM (280px, 250px, 30px);
             }
         }
 
         // Estilos para los párrafos dentro de la sección "fisher"
         p {
-            font-family: 'Abel', sans-serif;
+            font-family: $fuentes-abel;
             font-size: 1.2rem;
-            @include generalDJA (flex, center, center);
         }
     }
 }

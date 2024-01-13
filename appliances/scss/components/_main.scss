@@ -12,17 +12,14 @@ main {
   
         // Estilos para las imágenes dentro del contenedor
         img {
-          width: 280px;
-          height: 250px;
-          margin-top: 40px;
+          @include generalWHM(280px, 250px, 40px);
         }
       }
   
       // Estilos para los párrafos dentro de la sección "fisher"
       p {
-        font-family: 'Abel', sans-serif;
+        font-family: $fuentes-abel;
         font-size: 1.2rem;
-        text-align: center;
       }
     }
   }

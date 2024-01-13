@@ -23,8 +23,7 @@
     // Estilos para las imágenes dentro del contenedor
     img {
         // Ancho y alto de las imágenes
-        width: 200px;
-        height: 100px;
+        @include generalWH (200px, 100px);
     
         // Transición suave de la transformación durante 0.3 segundos con efecto ease
         transition: transform 0.3s ease;

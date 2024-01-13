@@ -106,8 +106,7 @@
             .container-main-div-fisher {
                 // Estilos para la sección principal cuando el ancho de la pantalla es menor a 458px
                 @include generalDFJA (flex, column, center, center);
-                padding: 0;
-                width: 100%;
+                @include generalPW(100%, 0);
             }
         }
     }

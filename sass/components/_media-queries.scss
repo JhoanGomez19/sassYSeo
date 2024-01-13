@@ -106,8 +106,7 @@
         .container-main-section-fisher {
             .container-main-div-fisher {
                 @include generalDFJA(flex, column, center, center);
-                padding: 0;
-                width: 100%;
+                @include generalPW(100%, 0);
             }
         } 
     }

@@ -1,5 +1,6 @@
 // Estilos globales para el reseteo de márgenes y el modelo de caja
 * {
+    // @include generalMPB(0,0 border-box);
     margin: 0;
     padding: 0;
     box-sizing: border-box;

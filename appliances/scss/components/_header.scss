@@ -2,47 +2,40 @@
 header {
     // Configuración de la disposición en cuadrícula
     display: grid;
-  
+
     // Logo de navegación
     .img-nav {
-        display: flex;
-        padding-left: 40px;
-  
+        @include generalDP (flex, 40px);
+
         // Estilos para la imagen del logo
         img {
-            width: 255px;
-            height: 250px;
+            @include generalWH (255px, 250px);
         }
     }
-  
+
     // Título principal
     .title-first {
-        display: flex;
-        color: white;
-        font-family: 'Kenia', sans-serif;
-        font-size: 2.0rem;
-        margin-left: 40px;
+        @include generalDFM(flex, 2.0rem, 40px);
+        color: $color-blanco;
+        font-family: $fuentes-kenia;
     }
-  
+
     // Contenedor de navegación
     .nav-container {
-        width: 100%;
+        @include generalWPO(100%, 0, hidden);
         @include generalDF (flex, column);
-        padding: 0;
-        background-color: #161614;
-        font-family: 'Abel', sans-serif;
-        overflow: hidden;
-  
+        background-color: $color-gris-ceniza;
+        font-family: $fuentes-abel;
+
         // Lista de navegación
         .nav-ul-li {
             @include generalDFJ (flex,row, flex-end);
             margin-right: 25px;
             // Elemento de lista
             li {
-                padding-top: 15px;
-                padding-left: 10px;
+                @include generalPP(15px, 10px);
                 list-style: none;
-  
+
                 // Estilos para los enlaces
                 a {
                     text-decoration: none;
@@ -51,5 +44,4 @@ header {
             }
         }
     }
-  }
-  
+}

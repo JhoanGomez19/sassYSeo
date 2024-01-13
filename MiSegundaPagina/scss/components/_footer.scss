@@ -14,23 +14,19 @@ footer {
   /* Estilos para el párrafo que contiene información de contacto */
   p {
     @include generalDJAG(flex, center, center, grid-area 1 / 1 / 0 / 3);
-      font-size: 2.5rem;
-      margin: 0;
+    @include generalMF(0, 2.5rem);
       color: white;
   }
 
   /* Estilos para la imagen de relleno de contactos */
   .img-team {
-      grid-area: 2 / 1 / 3 / 2;
-      width: 900px;
-      height: 400px;
+      @include generalGWH(grid-area  2 / 1 / 2 / 2, 900px, 400px); 
   }
 
   /* Estilos para el contenedor de iconos de contacto */
   .container-icon {
      @include generalDFJAGself (flex, column, flex-end, center, 30px, grid-area 0 / 2 / 2 / 3);
-      font-size: 2.7rem;
-      padding-right: 50px;
+     @include generalFPright(2.7rem, 50px);
          a {
             color: white;
         }
@@ -39,8 +35,6 @@ footer {
   /* Estilos para la imagen del logo personal en el pie de página */
   .img-logo {
       @include generalDJAself( flex, flex-end, flex-end);
-      width: 260px;
-      height: 100px;
-      margin: 30px;
+      @include generalWHM (260px, 100px, 30px);
   }
 }

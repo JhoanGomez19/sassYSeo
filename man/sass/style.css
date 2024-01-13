@@ -44,19 +44,19 @@ header .img-nav img {
 }
 header .title-first {
   display: flex;
-  color: white;
-  font-family: "Kenia", sans-serif;
   font-size: 2rem;
   margin-left: 40px;
+  color: white;
+  font-family: "Kenia", sans-serif;
 }
 header .nav-container {
   width: 100%;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 0;
   background-color: #161614;
   font-family: "Abel", sans-serif;
-  overflow: hidden;
 }
 header .nav-container .nav-ul-li {
   display: flex;
@@ -87,9 +87,6 @@ main .container-main-section-fisher .container-main-div-fisher img {
 main .container-main-section-fisher p {
   font-family: "Abel", sans-serif;
   font-size: 1.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media (max-width: 1810px) {
@@ -178,8 +175,8 @@ main .container-main-section-fisher p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
     width: 100%;
+    padding: 0;
   }
 }
 footer {
@@ -193,17 +190,17 @@ footer {
   margin-top: 40px;
 }
 footer h3 {
-  color: white;
   font-size: 1.8rem;
-  padding-left: 60px;
+  padding-left: 40px;
+  color: white;
   font-family: "Abel", sans-serif;
 }
 footer .container-icon {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-size: 30px;
-  padding-right: 50px;
+  gap: 4px;
+  font-size: 1.875rem;
+  padding-right: 60px;
 }
 footer .container-icon a i {
   color: white;

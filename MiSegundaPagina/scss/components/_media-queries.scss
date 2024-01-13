@@ -3,17 +3,11 @@
     header {
         // Estilos para el logo en la cabecera
         .image-logo {
-            width: 230px;
-            height: 90px;
-            margin-left: 50px;
-            margin-top: 20px;
+            @include generalWHMM(230px, 90px, 50px, 20px);
         }
         // Estilos para una imagen específica en la cabecera
         .image-my {
-            width: 270px;
-            height: 330px;
-            margin-top: 45%;
-            margin-left: 8%;
+            @include generalWHMM (270px, 330px, 40px, 200px);
         }
         // Estilos para los enlaces de navegación
         .nav-link {
@@ -24,8 +18,7 @@
         }
         // Estilos para un encabezado específico
         h1 {
-            font-size: 2.6rem;
-            height: 590px;
+            @include generalFH(2.6rem, 590px);
         }
     }
     // Estilos para la sección
@@ -50,8 +43,7 @@
         }
         // Estilos para un encabezado específico
         h1 {
-            font-size: 2.3rem;
-            height: 590px;
+            @include generalFH(2.3rem, 590px);
         }
     }
     // Estilos para la sección de contenido
@@ -62,8 +54,7 @@
     main {
         // Estilos para una imagen específica
         .image-code-p img {
-            width: 550px;
-            height: 400px;
+            @include generalWH (550px, 400px);
         }
         // Estilos para el contenedor de texto relacionado con la imagen anterior
         .image-code-p .container-text-code {
@@ -76,8 +67,7 @@
         }
         // Estilos similares para otras imágenes y sus textos asociados
         .image-flex-p img {
-            width: 550px;
-            height: 400px;
+            @include generalWH (550px, 400px);
         }
         .image-flex-p .container-text-flex {
             .first-text-flex {
@@ -88,8 +78,7 @@
             }
         }
         .image-google-p img {
-            width: 550px;
-            height: 350px;
+            @include generalWH (550px, 350px);
         }
         .image-google-p .container-text-google {
             .first-text-google {
@@ -109,13 +98,11 @@
         // Estilos para un párrafo específico
         p {
             @include generalDJ(flex, flex-start);
-            font-size: 2.0rem;
-            padding-left: 50px;
+            @include generalFPleft(2.0rem, 50px);
         }
         // Estilos para una imagen específica
         .img-team {
-            width: 700px;
-            height: 300px;
+            @include generalWH (700px, 300px);
         }
     }
 }
@@ -129,8 +116,7 @@
         }
         // Estilos para un encabezado específico
         h1 {
-            height: 490px;
-            font-size: 2.0rem;
+            @include generalFH(2.0rem, 490px);
         }
     }
     // Estilos para la sección de contenido
@@ -139,24 +125,20 @@
     }
     // Estilos para los enlaces de navegación
     .nav-link {
-        font-size: 0.8rem;
-        gap: 10px;
+        @include generalFG(0.8rem, 10px);
     }
     // Estilos para el contenido principal
     main {
         // Estilos para una imagen específica
         .image-flex-p img {
-            width: 500px;
-            height: 350px;
+            @include generalWH(500px, 350px);
         }
         // Estilos similares para otras imágenes
         .image-code-p img {
-            width: 500px;
-            height: 380px;
+            @include generalWH(500px, 380px);
         }
         .image-google-p img {
-            width: 500px;
-            height: 300px;
+            @include generalWH(500px, 300px);
         }
     }
 }
@@ -166,8 +148,7 @@
     header {
         // Estilos para un encabezado específico
         h1 {
-            height: 490px;
-            font-size: 2.0rem;
+            @include generalFH (2.0rem, 490px);
         }
         // Estilos para los enlaces de navegación
         .nav-link li {
@@ -178,14 +159,11 @@
     footer {
         // Estilos para una imagen específica
         .img-team {
-            width: 600px;
-            height: 200px;
+            @include generalWH(600px, 200px);
         }
         // Estilos para el logo en el pie de página
         .img-logo {
-            width: 230px;
-            height: 90px;
-            margin: 0px 15px 15px 0px;
+            @include generalWHM(230px, 90px, 0px 15px 15px 0px);
         }
     }
 }
@@ -195,13 +173,11 @@
     header {
         .nav-ul-li {
             .nav-link {
-                margin-right: 7px;
-                gap: 8px;
+                @include generalMG(7px, 8px);
             }
         }
         h1 {
-            height: 490px;
-            font-size: 1.8rem;
+            @include generalFH(1.8rem, 490px);
         }
         // Estilos para imágenes específicas
         .image-flex-p, .image-code-p, .image-google-p {
@@ -220,10 +196,7 @@
             @include generalDFFA (flex, row, 1, flex-start);
             width: 100%;
             h1 {
-                text-align: center;
-                order: 2;
-                height: 100%;
-                width: 40%;
+                @include generalTOHW(center, 2, 100%, 40%);
             }
             // Ocultar una imagen en ciertos tamaños de pantalla
             .image-my {
@@ -231,8 +204,7 @@
             }
             .image-logo {
                 @include generalDO(flex, 1);
-                height: auto;
-                width: 25%;
+                @include generalWH(25%, auto);
             }
             .nav-link {
                 @include generalDFAGO(flex, column, flex-end, 20px, 3); 
@@ -242,8 +214,7 @@
     }
     footer {
         .img-team {
-            width: 400px;
-            height: 200px;
+            @include generalWH(400px, 200px);
         }
     }
 }
@@ -255,9 +226,7 @@
         .image-flex-p, .image-code-p, .image-google-p {
             @include generalDFG(flex, column, 30px);
             img {
-                margin-top: 30px;
-                width: 300px;
-                height: 250px;
+                @include generalWHM (300px, 250px, 30px);
             }
         }
     }
@@ -268,14 +237,11 @@
         }
         // Estilos para una imagen específica
         .img-team {
-            width: 400px;
-            height: 150px;
+            @include generalWH(400px, 150px);
         }
         // Estilos para el logo en el pie de página
         .img-logo {
-            width: 130px;
-            height: 60px;
-            margin: 0px 10px 10px 0px;
+            @include generalWHM(130px, 60px, 0px 10px 10px 0px );
         }
     }
 }
@@ -288,9 +254,7 @@
             // Estilos específicos para la lista de navegación
             .nav-link {
                 @include generalDFAGO(flex,column, center, 30px, 1);
-                // display: flex;
-                margin-top: 20px;
-                width: 100%;
+                @include generalMW(20px, 100%);
                 li {
                     @include generalDJ(flex, center);
                 }
@@ -298,15 +262,11 @@
             // Estilos para el logo en la cabecera
             .image-logo {
                 @include generalDJAO(flex, center, center, 2);
-                margin-top: 50px;
-                margin-left: 0;
-                width: 250px;
-                height: 140px;
+                @include generalWHMM(250px, 140px, 0, 50px);
             }
             // Estilos para un encabezado específico
             h1 {
-                order: 3;
-                width: 100%;
+                @include generalOW(3, 100%);
             }
         }
     }
@@ -324,19 +284,16 @@
         }
         // Estilos para un párrafo específico
         p {
-            grid-area: p;
-            font-size: 1.0rem;
+            @include generalGF(p, 1.0rem);
         }
         // Estilos para una imagen específica
         .img-team {
             @include generalDJAG (flex, center, flex-end, img-team);
-            width: 280px;
-            height: 200px;
+            @include generalWH(280px, 200px);
         }
         // Estilos para un contenedor específico
         .container-icon {
-            grid-area: container-icon;
-            font-size: 1.3rem;
+            @include generalGF(container-icon, 1.3rem);
         }
     }
 }
